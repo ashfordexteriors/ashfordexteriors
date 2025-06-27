@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashford Exteriors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+    header, footer {
+      background-color: #0f172a;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+    header img {
+      height: 60px;
+      margin-right: 1rem;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      margin: 0;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      color: white;
+      margin-right: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    main {
+      padding: 2rem;
+    }
+    .section {
+      margin-bottom: 3rem;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .service-card {
+      background: white;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 1rem;
+      text-align: center;
+    }
+    .service-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 0.5rem 0.5rem 0 0;
+      background-color: #e2e8f0;
+    }
+    .service-card h3 {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+    }
+    @media (max-width: 768px) {
+      header, footer {
+        text-align: center;
+        flex-direction: column;
+      }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      nav a {
+        margin: 0.5rem;
+      }
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Ashford Exteriors Logo">
+      <h1>Ashford Exteriors</h1>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="section">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="images/placeholder.jpg" alt="Exterior Painting">
+          <h3>Exterior Painting</h3>
+        </div>
+        <div class="service-card">
+          <img src="images/placeholder.jpg" alt="Landscaping">
+          <h3>Landscaping</h3>
+        </div>
+        <div class="service-card">
+          <img src="images/placeholder.jpg" alt="Window Restoration">
+          <h3>Window Restoration</h3>
+        </div>
+        <div class="service-card">
+          <img src="images/placeholder.jpg" alt="Fence Installation & Painting">
+          <h3>Fence Installation & Painting</h3>
+        </div>
+        <div class="service-card">
+          <img src="images/placeholder.jpg" alt="Retaining Walls">
+          <h3>Retaining Walls</h3>
+        </div>
+        <div class="service-card">
+          <img src="images/placeholder.jpg" alt="Walkways">
+          <h3>Walkways</h3>
+        </div>
+        <div class="service-card">
+          <img src="images/placeholder.jpg" alt="Pressure Washing">
+          <h3>Pressure Washing</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Ashford Exteriors</h2>
+      <p>Hi, I’m Gavin Ashford — the founder and operator of Ashford Exteriors. I started this business with the goal of providing reliable, high-quality exterior services to homeowners who value detail, craftsmanship, and care. What began as a one-man operation has grown into a trusted name in residential contracting services in our community. Every project is an opportunity to enhance curb appeal and deliver lasting results.</p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Us</h2>
+      <p><strong>Owner:</strong> Gavin Ashford</p>
+      <p><strong>Phone:</strong> (555) 123-4567</p>
+      <p><strong>Email:</strong> gavin@ashfordexteriors.com</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Ashford Exteriors. All rights reserved.</p>
+  </footer>
+</body>
+</html>
